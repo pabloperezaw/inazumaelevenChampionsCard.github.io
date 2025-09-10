@@ -4,7 +4,7 @@ let turno = 'jugador';
 let puntos = { jugador: 0, ia: 0 };
 
 async function init() {
-  datos = await fetch('cards.json').then(r => r.json());
+  datos = await fetch('cartas.json').then(r => r.json());
   jugador = JSON.parse(JSON.stringify(datos));
   ia = JSON.parse(JSON.stringify(datos));
   renderManos();
