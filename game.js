@@ -37,12 +37,13 @@ function log(msg) {
   d.scrollTop = d.scrollHeight;
 }
 
+/*
 function switchTurno() {
   turno = turno === 'jugador' ? 'ia' : 'jugador';
   renderManos();
   if (turno === 'ia') setTimeout(turnoIA, 800);
 }
-
+*/
 function turnoIA() {
   // IA elige aleatoriamente entre técnica y jugador
   const disponibles = ia.jugadores.filter(c => !c.usada);
