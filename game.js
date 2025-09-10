@@ -40,19 +40,9 @@ function log(msg) {
 function switchTurno() {
   turno = turno === 'jugador' ? 'ia' : 'jugador';
   renderManos();
-
-  if (turno === 'ia') {
-    setTimeout(() => {
-      turnoIA();
-      // Después de la IA, devolvemos el turno al jugador:
-      turno = 'jugador';
-      renderManos();  //  Esto reactivará los botones del jugador
-    }, 800);
-  }
+  if (turno === 'ia') setTimeout(turnoIA, 800);
 }
 
-
-/*
 function turnoIA() {
   // IA elige aleatoriamente entre técnica y jugador
   const disponibles = ia.jugadores.filter(c => !c.usada);
@@ -60,7 +50,7 @@ function turnoIA() {
   if (Math.random() < 0.5 && tec.length) usarTecnicaIA(tec[Math.floor(Math.random()*tec.length)]);
   else if (disponibles.length) usarCartaJugadorIA(disponibles[Math.floor(Math.random()*disponibles.length)]);
 }
-*/
+
 function usarCartaJugador(idx) {
   const cartaJ = jugador.jugadores[idx];
   cartaJ.usada = true;
