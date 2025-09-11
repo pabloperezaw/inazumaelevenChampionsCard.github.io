@@ -1,0 +1,15 @@
+{
+  "jugadores": [
+    {"nombre":"Mark Evans","estadisticas":{"tiro":70,"regate":65,"defensa":60,"parada":90},"usada":false},
+    {"nombre":"Axel Blaze","estadisticas":{"tiro":85,"regate":60,"defensa":55,"parada":40},"usada":false},
+    {"nombre":"Mizuki","estadisticas":{"tiro":60,"regate":75,"defensa":50,"parada":45},"usada":false},
+    {"nombre":"Takeshi","estadisticas":{"tiro":50,"regate":55,"defensa":80,"parada":70},"usada":false},
+    {"nombre":"Shu","estadisticas":{"tiro":65,"regate":70,"defensa":65,"parada":55},"usada":false}
+  ],
+  "tecnicas": [
+    {"nombre":"Super Tiro Explosivo","tipo":"tiro","potencia":90,"usada":false},
+    {"nombre":"Regate Espectral","tipo":"regate","potencia":85,"usada":false},
+    {"nombre":"Defensa Imbatible","tipo":"defensa","potencia":88,"usada":false}
+  ],
+  "entrenador": {"nombre":"Entrenador Evans","mejoras":{"parada":10,"defensa":5}}
+}
