@@ -44,11 +44,27 @@ function switchTurno() {
 }
 
 function turnoIA() {
+  // // IA elige aleatoriamente entre técnica y jugador
+  // const disponibles = ia.jugadores.filter(c => !c.usada);
+  // const tec = ia.tecnicas.filter(t => !t.usada);
+  // if (Math.random() < 0.5 && tec.length) usarTecnicaIA(tec[Math.floor(Math.random()*tec.length)]);
+  // else if (disponibles.length) usarCartaJugadorIA(disponibles[Math.floor(Math.random()*disponibles.length)]);
   // IA elige aleatoriamente entre técnica y jugador
   const disponibles = ia.jugadores.filter(c => !c.usada);
   const tec = ia.tecnicas.filter(t => !t.usada);
-  if (Math.random() < 0.5 && tec.length) usarTecnicaIA(tec[Math.floor(Math.random()*tec.length)]);
-  else if (disponibles.length) usarCartaJugadorIA(disponibles[Math.floor(Math.random()*disponibles.length)]);
+  
+  if (Math.random() < 0.5 && tec.length) {
+    usarTecnicaIA(tec[Math.floor(Math.random() * tec.length)]);
+  } else if (disponibles.length) {
+    usarCartaJugadorIA(disponibles[Math.floor(Math.random() * disponibles.length)]);
+  }
+
+  // Después de que la IA haya jugado, se cambia el turno al jugador
+  setTimeout(() => {
+    turno = 'jugador';
+    renderManos();
+  }, 800); // Retardo de 800 ms para simular la acción de la IA
+
 }
 
 function usarCartaJugador(idx) {
