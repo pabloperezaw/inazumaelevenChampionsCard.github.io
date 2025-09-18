@@ -1,15 +1,15 @@
 {
   "jugadores": [
-    {"nombre":"Mark Evans","estadisticas":{"tiro":70,"regate":65,"defensa":60,"parada":90},"usada":false},
-    {"nombre":"Axel Blaze","estadisticas":{"tiro":85,"regate":60,"defensa":55,"parada":40},"usada":false},
-    {"nombre":"Mizuki","estadisticas":{"tiro":60,"regate":75,"defensa":50,"parada":45},"usada":false},
-    {"nombre":"Takeshi","estadisticas":{"tiro":50,"regate":55,"defensa":80,"parada":70},"usada":false},
-    {"nombre":"Shu","estadisticas":{"tiro":65,"regate":70,"defensa":65,"parada":55},"usada":false}
+    {"nombre":"Mark Evans","estadisticas":{"tiro":72,"regate":68,"defensa":70,"parada":77},"usada":false},
+    {"nombre":"Axel Blaze","estadisticas":{"tiro":79,"regate":75,"defensa":64,"parada":76},"usada":false},
+    {"nombre":"Nathan Swift","estadisticas":{"tiro":64,"regate":76,"defensa":54,"parada":68},"usada":false},
+    {"nombre":"Jack Walside","estadisticas":{"tiro":62,"regate":49,"defensa":66,"parada":62},"usada":false},
+    {"nombre":"Kevin Dragonfly","estadisticas":{"tiro":71,"regate":60,"defensa":61,"parada":59},"usada":false}
   ],
   "tecnicas": [
-    {"nombre":"Super Tiro Explosivo","tipo":"tiro","potencia":90,"usada":false},
-    {"nombre":"Regate Espectral","tipo":"regate","potencia":85,"usada":false},
-    {"nombre":"Defensa Imbatible","tipo":"defensa","potencia":88,"usada":false}
+    {"nombre":"Mano celestial","tipo":"Parada","potencia":90,"usada":false},
+    {"nombre":"Tornado de fuego","tipo":"Tiro","potencia":95,"usada":false},
+    {"nombre":"El Muro","tipo":"defensa","potencia":88,"usada":false}
   ],
   "entrenador": {"nombre":"Entrenador Evans","mejoras":{"parada":10,"defensa":5}}
 }
